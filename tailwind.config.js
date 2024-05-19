@@ -10,8 +10,13 @@ export default {
         xl: "5rem",
         "2xl": "6rem",
       },
+      center: true,
     },
     extend: {
+      screens: {
+        xs: "370px",
+        xs2: "390px",
+      },
       colors: {
         dark: "#111111",
         light: "#EEEEEE",

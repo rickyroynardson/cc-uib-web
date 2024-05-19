@@ -25,4 +25,24 @@ export const PEOPLE: People[] = [
     role: "Designer",
     image: "/people/owil.jpg",
   },
+  {
+    name: "Hernando",
+    role: "Engineer",
+    image: "/people/hernando.jpg",
+  },
+  {
+    name: "Ricky Roy Nardson",
+    role: "Engineer",
+    image: "/people/rickyroynardson.jpg",
+  },
+  {
+    name: "Joyce",
+    role: "Relations",
+    image: "/people/joyce.jpg",
+  },
+  {
+    name: "Will",
+    role: "Designer",
+    image: "/people/owil.jpg",
+  },
 ];
