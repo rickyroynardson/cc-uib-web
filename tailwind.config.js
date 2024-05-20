@@ -16,6 +16,7 @@ export default {
       screens: {
         xs: "370px",
         xs2: "390px",
+        xs3: "480px",
       },
       colors: {
         dark: "#111111",
