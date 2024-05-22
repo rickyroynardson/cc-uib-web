@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({ active, theme, scrollTo }) => {
   return (
     <header
       className={`fixed top-0 z-50 w-full px-4 py-4 flex justify-between ${
-        theme === "light" ? "text-[#3C3F3C]" : "text-light backdrop-blur-sm"
+        theme === "light" ? "text-[#3C3F3C]" : "text-light backdrop-blur-xl"
       }`}
     >
       <HeaderButton
