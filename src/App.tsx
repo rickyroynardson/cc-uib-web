@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer";
 import { GallerySlide } from "./components/GallerySlide";
 import { Header } from "./components/Header";
 import { PeopleSlide } from "./components/PeopleSlide";
+import { ProgramSection } from "./components/ProgramSection";
 
 const App = () => {
   const [headerTheme, setHeaderTheme] = useState<"light" | "dark">("light");
@@ -123,6 +124,7 @@ const App = () => {
         ></div>
       </div>
       <AboutSection ref={aboutRef} />
+      <ProgramSection />
       <PeopleSlide />
       <GallerySlide ref={galleryRef} />
       <Footer />
