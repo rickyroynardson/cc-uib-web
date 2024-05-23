@@ -16,7 +16,10 @@ const HeaderButton: React.FC<HeaderButtonProps> = ({
   onClick,
 }) => {
   return (
-    <button onClick={onClick} className={`text-xl ${isActive && "font-bold"}`}>
+    <button
+      onClick={onClick}
+      className={`text-xl sm:text-2xl lg:text-3xl ${isActive && "font-bold"}`}
+    >
       {children}
     </button>
   );
@@ -25,7 +28,7 @@ const HeaderButton: React.FC<HeaderButtonProps> = ({
 export const Header: React.FC<HeaderProps> = ({ active, theme, scrollTo }) => {
   return (
     <header
-      className={`fixed top-0 z-50 w-full px-4 py-4 flex justify-between ${
+      className={`fixed top-0 z-50 w-full px-4 xs3:px-8 sm:px-12 lg:px-36 xl:px-60 py-4 xs3:py-6 sm:py-8 flex justify-between ${
         theme === "light" ? "text-[#3C3F3C]" : "text-light backdrop-blur-xl"
       }`}
     >

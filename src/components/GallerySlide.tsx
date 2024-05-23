@@ -6,7 +6,7 @@ import { Autoplay } from "swiper/modules";
 // export const GallerySlide = () => {
 export const GallerySlide = forwardRef<HTMLDivElement>((_, ref) => (
   <div className="py-40 bg-dark flex items-center justify-center" ref={ref}>
-    <div className="w-full space-y-10 xs2:space-y-12 lg:space-y-14 xl:space-y-16 2xl:space-y-20">
+    <div className="w-full space-y-10 xs2:space-y-12 lg:space-y-16 2xl:space-y-20">
       {GALLERY.map((gallery, index) => (
         <Swiper
           key={index}

@@ -1,23 +1,29 @@
 import { forwardRef } from "react";
+import { motion } from "framer-motion";
 import { AboutSlide } from "./AboutSlide";
 
 export const AboutSection = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <div className="min-h-screen bg-dark flex flex-col" ref={ref}>
-      <div className="flex items-center justify-center pt-20 md:pt-40">
-        <div className="text-light">
-          <div className="flex items-center gap-3">
-            <p className="font-bold text-5xl md:text-7xl xl:text-8xl">
+      <div className="flex items-center justify-center pt-24 md:pt-32 lg:pt-44">
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="text-light"
+        >
+          <div className="flex items-center gap-3 sm:gap-4 lg:gap-6">
+            <p className="font-bold text-5xl xs3:text-6xl sm:text-7xl lg:text-8xl">
               Computer
             </p>
             <p className="-rotate-12 w-16 md:w-20 xl:w-28 aspect-square rounded-full bg-[#FF372A] flex items-center justify-center text-2xl md:text-4xl font-semibold">
               24
             </p>
           </div>
-          <p className="font-bold text-5xl md:text-7xl xl:text-8xl ml-3">
+          <p className="font-bold text-5xl xs3:text-6xl sm:text-7xl lg:text-8xl ml-3">
             Community
           </p>
-        </div>
+        </motion.div>
       </div>
       <AboutSlide />
 

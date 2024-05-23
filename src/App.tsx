@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import { AboutSection } from "./components/AboutSection";
 import { Footer } from "./components/Footer";
 import { GallerySlide } from "./components/GallerySlide";
@@ -84,7 +85,12 @@ const App = () => {
       <div ref={heroRef} className="relative h-[300vh] bg-light">
         <div className="sticky top-0 w-full h-screen overflow-hidden">
           {isScrollBreak && (
-            <div className="absolute top-1/3 xs:top-40 sm:top-1/4 lg:top-1/4 xl:top-32 w-full flex justify-center">
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              className="absolute top-1/3 xs:top-40 sm:top-1/4 lg:top-1/4 xl:top-1/4 w-full flex justify-center"
+            >
               <div className="text-[#3C3F3C]">
                 <div className="flex items-center gap-3">
                   <p className="font-bold text-5xl md:text-7xl xl:text-8xl">
@@ -98,7 +104,7 @@ const App = () => {
                   Community
                 </p>
               </div>
-            </div>
+            </motion.div>
           )}
           <div
             className="absolute bottom-0 w-full flex justify-center"
@@ -107,7 +113,7 @@ const App = () => {
             <img
               src="/hero.png"
               alt="UIB"
-              className="w-1/2 xs3:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6"
+              className="w-1/2 xs3:w-1/3 md:w-1/5 xl:w-1/6"
             />
           </div>
         </div>

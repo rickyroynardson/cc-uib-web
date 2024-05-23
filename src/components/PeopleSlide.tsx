@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import { PEOPLE } from "../constants/people";
@@ -10,14 +11,18 @@ export const PeopleSlide = () => {
 
   return (
     <div className="pb-40 pt-52 bg-dark text-light flex flex-col gap-8 lg:gap-12 xl:gap-16">
-      <div className="container w-full h-1/3 flex items-end justify-center relative">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        className="container w-full h-1/3 flex items-end justify-center relative"
+      >
         <p className="font-bold text-6xl xs2:text-7xl lg:text-8xl xl:text-9xl text-center z-10">
           Folks behind CC
         </p>
         <p className="absolute right-16 sm:right-4 md:right-20 lg:right-28 xl:right-28 2xl:right-60 bottom-10 sm:bottom-8 md:bottom-10 xl:bottom-16 -rotate-12 w-16 xl:w-24 aspect-square rounded-full bg-[#FF372A] flex items-center justify-center text-2xl xl:text-3xl font-semibold">
           24
         </p>
-      </div>
+      </motion.div>
       <div className="grow space-y-4">
         <Swiper
           slidesPerView={1.25}
