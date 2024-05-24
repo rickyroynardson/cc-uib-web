@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "grid-pattern": "url('/public/blue-grid.png')",
+        "grid-pattern": "url('/blue-grid.png')",
       },
       screens: {
         xs: "370px",

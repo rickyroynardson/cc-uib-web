@@ -112,9 +112,10 @@ const App = () => {
             style={{ transform: `scale(${heroScale})` }}
           >
             <img
-              src="/hero.png"
+              src="/hero.webp"
               alt="UIB"
               className="w-1/2 xs3:w-1/3 md:w-1/5 xl:w-1/6"
+              loading="eager"
             />
           </div>
         </div>

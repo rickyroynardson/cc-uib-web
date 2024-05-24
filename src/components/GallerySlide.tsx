@@ -10,11 +10,13 @@ export const GallerySlide = forwardRef<HTMLDivElement>((_, ref) => (
       {GALLERY.map((gallery, index) => (
         <Swiper
           key={index}
+          speed={4000}
           slidesPerView={1.4}
           spaceBetween={20}
           dir={index % 2 === 0 ? "rtl" : "ltr"}
           autoplay={{
-            delay: index % 2 === 0 ? 2200 : 2600,
+            // delay: index % 2 === 0 ? 2200 : 2600,
+            delay: 1,
             disableOnInteraction: false,
           }}
           centeredSlides={index % 2 === 0 ? true : false}
@@ -51,7 +53,8 @@ export const GallerySlide = forwardRef<HTMLDivElement>((_, ref) => (
                 <img
                   src={image.image}
                   alt={image.description}
-                  className="w-full h-full"
+                  className="w-full h-full object-cover bg-gray-500"
+                  loading="lazy"
                 />
               </div>
             </SwiperSlide>
