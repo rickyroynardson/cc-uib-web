@@ -8,41 +8,41 @@ export const PEOPLE: People[] = [
   {
     name: "Hernando",
     role: "Engineer",
-    image: "/people/hernando.jpg",
+    image: "/people/hernando.webp",
   },
   {
     name: "Ricky Roy Nardson",
     role: "Engineer",
-    image: "/people/rickyroynardson.jpg",
+    image: "/people/rickyroynardson.webp",
   },
   {
     name: "Joyce",
     role: "Relations",
-    image: "/people/joyce.jpg",
+    image: "/people/joyce.webp",
   },
   {
     name: "Will",
     role: "Designer",
-    image: "/people/owil.jpg",
+    image: "/people/owil.webp",
   },
   {
     name: "Hernando",
     role: "Engineer",
-    image: "/people/hernando.jpg",
+    image: "/people/hernando.webp",
   },
   {
     name: "Ricky Roy Nardson",
     role: "Engineer",
-    image: "/people/rickyroynardson.jpg",
+    image: "/people/rickyroynardson.webp",
   },
   {
     name: "Joyce",
     role: "Relations",
-    image: "/people/joyce.jpg",
+    image: "/people/joyce.webp",
   },
   {
     name: "Will",
     role: "Designer",
-    image: "/people/owil.jpg",
+    image: "/people/owil.webp",
   },
 ];
