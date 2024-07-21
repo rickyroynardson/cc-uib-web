@@ -56,6 +56,14 @@ export const GALLERY: GallerySection[] = [
         description: "Gallery 11",
         image: "/gallery/gallery-11.webp",
       },
+      {
+        description: "Gallery 24",
+        image: "/gallery/gallery-24.webp",
+      },
+      {
+        description: "Gallery 25",
+        image: "/gallery/gallery-25.webp",
+      },
     ],
   },
   {
@@ -104,6 +112,10 @@ export const GALLERY: GallerySection[] = [
       {
         description: "Gallery 22",
         image: "/gallery/gallery-22.webp",
+      },
+      {
+        description: "Gallery 23",
+        image: "/gallery/gallery-23.webp",
       },
     ],
   },
