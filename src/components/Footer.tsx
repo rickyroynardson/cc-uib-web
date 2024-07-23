@@ -10,9 +10,21 @@ export const Footer = () => {
         </p>
         <div className="w-full grid grid-cols-2">
           <ul className="text-sm font-semibold sm:text-base xl:text-lg">
-            <li>Instagram</li>
-            <li>Contact Us</li>
-            <li>UIB Website</li>
+            <li>
+              <a href="https://www.instagram.com/cc.uib" target="_blank">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/cc.uib" target="_blank">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="https://www.uib.ac.id/" target="_blank">
+                UIB Website
+              </a>
+            </li>
           </ul>
           <p className="text-sm font-semibold sm:text-base xl:text-lg">
             Baloi-Sei Ladi, Jl. Gajah Mada, Tiban Indah, Kec. Sekupang, Kota

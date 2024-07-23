@@ -58,8 +58,8 @@ export const AboutSlide = () => {
           </div>
           <div className="flex-shrink-0 w-[320px] xs3:w-[360px] md:w-[500px] lg:w-[600px] xl:w-[700px] h-full">
             <img
-              src="https://dummyimage.com/hd1080"
-              alt="Dummy Image"
+              src="/hmps.png"
+              alt="HMPS 2024"
               className="w-full h-full object-cover content-center"
             />
           </div>
